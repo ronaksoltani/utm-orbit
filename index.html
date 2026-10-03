@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-app="utm-orbit" data-layout="tool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eff6f6">
+  <meta name="description" content="Build consistent tagged links, normalize campaign values and export a batch without spreadsheet guesswork.">
+  <meta property="og:title" content="UTM Orbit — CAMPAIGN TAGGING · URL BUILDER">
+  <meta property="og:description" content="Build consistent tagged links, normalize campaign values and export a batch without spreadsheet guesswork.">
+  <meta property="og:image" content="preview.svg">
+  <title>UTM Orbit — CAMPAIGN TAGGING · URL BUILDER</title>
+  <link rel="icon" href="preview.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body style="--paper:#eff6f6;--ink:#1d3033;--muted:#6d8082;--accent:#8fe1e4;--accent2:#9ab1ff">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>A FREE, LOCAL-FIRST MARKETING WORKBENCH</span><span>SAMPLE CONTENT · NO TRACKING <b>✳</b></span></div>
+  <header class="site-nav"><a class="brand" href="#top" aria-label="UTM Orbit home"><span class="brand-mark">◈</span>UTM Orbit<small>TOOLKIT</small></a><nav id="main-navigation" aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#notes">About</a><a class="nav-cta" href="#workspace">Open the tool ↗</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+  <main id="main">
+    <section class="tool-hero" id="top"><div><span class="eyebrow"><i class="eyebrow-dot"></i>CAMPAIGN TAGGING · URL BUILDER</span><h1>Every campaign.<br>One clean source.</h1><p>Build consistent tagged links, normalize campaign values and export a batch without spreadsheet guesswork.</p><div class="tool-trust"><span class="lock-mark">⌑</span><span>Runs in your browser <b>·</b> No account <b>·</b> Your data stays local</span></div></div><div class="tool-hero-side"><div class="metric-orb"><b>Consistent tags</b><span>reusable naming rules for every link</span></div><span class="orb-caption">BUILT FOR CLEARER DECISIONS</span></div></section>
+    <section id="workspace" class="tool-workspace"><div class="tool-grid"><section class="panel"><span class="eyebrow">BUILD A CONSISTENT LINK</span><label for="utm-url">Destination URL</label><input id="utm-url" type="url" value="https://example.com/spring-guide" placeholder="https://example.com/page"><div class="field-row"><label for="utm-source">Source <small>required</small><input id="utm-source" value="newsletter" placeholder="newsletter"></label><label for="utm-medium">Medium <small>required</small><input id="utm-medium" value="email" placeholder="email"></label></div><label for="utm-campaign">Campaign <small>required</small><input id="utm-campaign" value="spring_launch" placeholder="spring_launch"></label><div class="field-row"><label for="utm-content">Content (optional)<input id="utm-content" placeholder="hero_button"></label><label for="utm-term">Term (optional)<input id="utm-term" placeholder="garden_planning"></label></div><div class="button-row"><button id="build-utm" class="btn btn--accent">Build tagged URL ↗</button><button id="add-utm" class="btn btn--quiet">Add to batch +</button></div><div class="output-code" id="utm-output" aria-live="polite">Your campaign URL will appear here.</div><button id="copy-utm" class="text-button">Copy URL ↗</button><p class="micro-note" id="utm-status">Values are trimmed and lowercased for consistent tagging.</p></section><section class="panel"><div class="panel-head"><span class="eyebrow">BATCH BUILDER</span><button id="download-utm" class="text-button">Download CSV ↓</button></div><div id="utm-batch" class="empty-inline">Build a link and add it to your batch.</div></section></div></section>
+    <section class="notes-section notes-section--tool" id="notes"><div><span class="eyebrow">SCOPE & METHOD</span><h2>A helpful lens, with its limits in view.</h2></div><div class="notes-copy"><p>This small tool makes its inputs and assumptions visible. It runs locally in your browser and never sends the data you enter to an external service.</p><p>Use results as a practical starting point, then check platform documentation, real search results and first-hand research before making business decisions.</p><a href="README.md" class="text-button">Read the project notes ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span>UTM Orbit</a><p>A small, transparent tool for better marketing work.</p><div class="footer-links"><a href="#top">Back to top ↑</a><a href="README.md">Documentation</a><span>Built by Ronak Soltani · 2026</span></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
